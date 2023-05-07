@@ -1,16 +1,20 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Brief introduction
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+소프트 엔지니어가 꿈인 이정민이라고 합니다. 
+저는 학부시절 다음과 같은 것들을 공부했습니다.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- IOS Mobile Developmenet : HiiTWorkOutTrainer
+- Data Structure & Algorithm : Big-O Analysis, Sorting, DFS/BFS, Dynamic Programming, MinHeap
+- Object-oriented Programming
+- Programming Languages
+- Computing Theory: Automata
+- System Programming with C and Unix
 
-What else do you need?
 
 ### My story
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+After working as an AI chat-bot assistant intern at Amway Korea with cooperating IT company KakaoTalk, I found my strong interest in the technology field. Therefore, I decided to major in Computer Science. After spending 3 years as a Computer Science student, I have learned how to think creatively about solutions and focus on small details to prevent errors from edge-cases. With my dedication to my work, I desire to provide internal technical improvement to the organization that I work for. 
