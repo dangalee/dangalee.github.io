@@ -4,7 +4,7 @@ title: About me
 subtitle: Brief introduction
 ---
 
-소프트 엔지니어가 꿈인 이정민이라고 합니다. 
+안녕하세요 꿈을 위해 열심히 공부하고 있는 이정민이라고 합니다. 
 저는 학부시절 다음과 같은 것들을 공부했습니다.
 
 - IOS Mobile Developmenet : HiiTWorkOutTrainer
