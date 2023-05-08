@@ -4,10 +4,9 @@ title: About me
 subtitle: Brief introduction
 ---
 
-안녕하세요 꿈을 위해 열심히 공부하고 있는 이정민이라고 합니다. 
-저는 학부시절 다음과 같은 것들을 공부했습니다.
+안녕하세요 개발자를 목표로 공부하고 있는 이정민이라고 합니다. 
 
-- IOS Mobile Developmenet : HiiTWorkOutTrainer
+- IOS Mobile Developmenet
 - Data Structure & Algorithm : Big-O Analysis, Sorting, DFS/BFS, Dynamic Programming, MinHeap
 - Object-oriented Programming
 - Programming Languages

@@ -22,10 +22,10 @@ author: Jungmin Lee
 navbar-links:
   About Me: "aboutme"
   Computer Science:
-    - Projects: "default"
-    - Problem-solving: "default"
+    - Projects: "project"
+    - Problem-solving: "problem"
     
-  CV/Resume: "default"
+  CV/Resume: "download"
 
 ################
 # --- Logo --- #
@@ -59,7 +59,7 @@ social-network-links:
   #youtube: c/daattali
 #  medium: yourname
 #  reddit: yourname
-  linkedin: jle18
+  linkedin: jungminiu
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
