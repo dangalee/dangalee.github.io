@@ -8,11 +8,17 @@ subtitle: Brief introduction
 
 - IOS Mobile Developmenet
 - Data Structure & Algorithm : Big-O Analysis, Sorting, DFS/BFS, Dynamic Programming, MinHeap
-- Object-oriented Programming
-- Programming Languages
-- Computing Theory: Automata
+- Object-oriented Programming: Design Patterns
+- Programming Languages: Interpreters
+- Computing Theory: Automata Theory
 - System Programming with C and Unix
+- Computer Structures
+- Operating Systems
+- Database concepts: postgresql, mysql
 
+- Calculus I, II
+- Linear Algebra
+- Probability and Statistics
 
 ### My story
 
