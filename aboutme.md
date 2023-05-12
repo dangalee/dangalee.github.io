@@ -14,7 +14,7 @@ subtitle: Brief introduction
 - System Programming with C and Unix
 - Computer Structures
 - Operating Systems
-- Database concepts: postgresql, mysql
+- Database concepts
 
 - Calculus I, II
 - Linear Algebra
