@@ -1,0 +1,3 @@
+User-agent: *
+Allow: //
+Sitemap: https://dangalee.github.io/feed.xml
