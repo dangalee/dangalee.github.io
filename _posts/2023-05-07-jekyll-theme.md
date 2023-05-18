@@ -50,9 +50,8 @@ ex. 이 포스트는 https://dangalee.github.io/2023-05-07-jekyll-theme 로 확�
 
 모든 포스트들은 template적용을 위해 front matter로 시작하여야 한다.
 > "---" \
-> "---"
-두 줄 "---" 사이에는 title, subtitle, tags, cover-img, thumbnail-img, comments 등과 같은 변수들을 지정할 수 있다. (다른 변수들은 생략
-)
+> "---" \
+> 두 줄 "---" 사이에는 title, subtitle, tags, cover-img, thumbnail-img, comments 등과 같은 변수들을 지정할 수 있다. (다른 변수들은 생략)
 
 tags: 포스트의 category 지정 가능 ex. [personal, travel] \
 cover-img, thumbnail-img: 이미지 등록 ex. /(위치)/(사진명).jpg \
