@@ -8,14 +8,14 @@ tags: [algorithm, directed-graph, greedy, undirected-graph]
 최단거리를 greedy principal로 구하는 다익스트라 알고리즘은 **edge가 모두 0 이상일 때만 사용가능하다.** \
 다익스트라 알고리즘에서, 한번 선택된 node는 visited에 합류하게 된다. \
 그리고 visited에 합류하면, 끝이다. 다시 그 노드에 대한 최소거리를 구하지 않는다.
-
-사실 다익스트라와 Prim's 알고리즘은 상당히 유사하다. \
-while priority queue != empty: \
-    v = priority queue에서 가장 우선순위인 vertex를 dequeue. \
-    v 의 인접 노드들에 대하여 \ 
-    다익스트라는 시작점으로부터 인접 노드까지의 최소거리를 distance dictionary에 업데이트.\
+<pre>
+사실 다익스트라와 Prim's 알고리즘은 상당히 유사하다. 
+while priority queue != empty: 
+    v = priority queue에서 가장 우선순위인 vertex를 dequeue. 
+    v 의 인접 노드들에 대하여 
+    다익스트라는 시작점으로부터 인접 노드까지의 최소거리를 distance dictionary에 업데이트.
     Prims는 인접 노드를 방문하는 최소 edge값을 업데이트.
-
+</pre>
 
 
 #### 알고리즘
