@@ -7,7 +7,8 @@ tags: [queue, heaps, BST]
 ##### 우선순위 큐 [Priority Queue] 
 Queue의 한 형태인 우선순위 큐는 모든 elements에 우선순위 값이 지정되어 있다. 따라서, enqueue()시, 우선순위 값이 높은 경우 큐의 앞쪽에 배치된다. Priority queue 구성 시 array, linkedlist, heap 또는 **binary search tree**를 사용할 수 있다.
 
-Priority Queue의 특징 [출처: https://www.geeksforgeeks.org/priority-queue-set-1-introduction/]
+**Priority Queue의 특징**
+[출처: https://www.geeksforgeeks.org/priority-queue-set-1-introduction/]
 - Every item has a priority associated with it. 
 - An element with high priority is dequeued before an element  with low priority. 
 - If two elements have the same priority, they are served according to their order in the queue.
@@ -36,7 +37,6 @@ Heap의 높이는 log n + 1이기에 (n은 노드의 수, 항상 balanced tree!!
 모든 노드는 자식 노드와 같거나 큰 값을 가져야 한다. Root 노드는 tree 내에서 가장 큰 값을 지닌다.
 * relationship 2: Min Heap \
 모든 노드는 자식 노드와 같거나 작은 값을 가진다. Root 노드는 tree 내에서 가장 작은 값을 지닌다.
-
 3. BST(Binary Search Tree)는 Total order, 전체 정렬으로, sibling 내에서도 왼쪽에 위치한 sibling이 오른쪽에 위치한 sibling보다 작은 값을 가져야 한다. \
 Heap은 아무 상관 없다. right sibling 값 < left sibling 값
 

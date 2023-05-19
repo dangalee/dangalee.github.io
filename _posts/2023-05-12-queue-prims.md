@@ -2,7 +2,7 @@
 layout: post
 title: Queue
 subtitle: Prim's algorithm
-tags: [algorithm, queue, graph, greedy, non-cyclic]
+tags: [algorithm, queue, undirected-graph, greedy, non-cyclic]
 ---
 ##### Queue
 자료구조의 형태 중 하나인 Queue는 FIFO[First in first out]를 따른다. 따라서 dequeue() 사용시 front 또는 head위치의 element를 꺼낸다. enqueue()는 반대로 queue의 rear 또는 tail 위치에 element를 집어 넣게 된다.
