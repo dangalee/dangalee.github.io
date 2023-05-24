@@ -1,43 +1,43 @@
 ---
 layout: post
 title: beautiful-jekyll 테마 사용방법
-subtitle: Summarization of https://github.com/daattali/beautiful-jekyll README.md
+# subtitle: Summarization of https://github.com/daattali/beautiful-jekyll README.md
 # cover-img: /assets/img/path.jpg
 # thumbnail-img: /assets/img/thumb.png
 # share-img: /assets/img/path.jpg
 tags: [introduction, review]
 ---
 
+공부하기 첫단계, 블로그로 기록하기. \
+제 블로그는 다음과 같은 과정으로 만들어졌습니다. ~~과거에 사용하던 맥북이 망가졌기에, 모든 걸 새로 세팅하면서
+다시 정리합니다.~~
 
-개발자 준비에 앞서 개인 포트폴리오 작성을 위해 github.io repository를 생성하고
-Jekyll theme 중 하나인 beautiful-jekyll을 적용하였다.
+### 1. Github Pages 만드는 과정
 
-### Github Pages 만드는 과정
-
-Step 01: Github repository 생성, 이름은 **(username).github.io**
+Step 01: Github repository를 생성합니다. 이때 repository의 이름은 반드시 **(username).github.io** 형식이어야 합니다.
 
 Step 02. Clone repository to local directory. 
-필자의 경우 visual studio code에 clone하였다. visual studio code와 같은 IDE를 이용하면 코드를 한 눈에 볼 수 있을 뿐더러 commit & push 과정이 단순해진다.
+저의 경우 visual studio code를 설치하고, github 주소를 복사해서 ide내에 clone하였습니다. visual studio code와 같은 idE를 이용하면 코드를 한 눈에 볼 수 있을 뿐더러 commit & push 과정이 단순해집니다.
 
-Step 03: Jekyll을 이용하기 위하여 Ruby, RubyGems, GCC and Make 설치. [Jekyll Installation](https://jekyllrb.com/docs/installation/)
+Step 03: Jekyll을 이용하기 위하여 Ruby, RubyGems, GCC and Make 설치합니다. 참조: [Jekyll Installation](https://jekyllrb.com/docs/installation/)
 
-Step 04: Visual studio code 내에서 terminal을 열어 **gem install jeckyll bundler**를 입력, jekyll 설치
+Step 04: Visual studio code 내에서 terminal을 열어 **gem install jeckyll bundler**를 입력하여 jekyll를 설치해 줍시다.
 
-Step 05: terminal 내에서 **jekyll new ./**를 입력하여 jekyll을 생성
+Step 05: terminal 내에서 **jekyll new ./**를 입력하여 jekyll을 생성합니다.
 
-Step 06: terminal 내에서 **bundle install** 입력, bundle 설치
+Step 06: terminal 내에서 **bundle install** 입력, bundle 설치합니다.
 
-Step 07: [beautiful-jekyll 테마 다운로드](https://github.com/daattali/beautiful-jekyll) 에 <>code 버튼을 누르면 zip 파일을 다운로드 받을 수 있다. 이 후, 압축을 풀어 안에 있는 모든 파일을 github.io local directory에 덮어쓰기 해 준다.
+Step 07: [beautiful-jekyll 테마 다운로드](https://github.com/daattali/beautiful-jekyll) 에 접속하여 화면 우상단의 <>code 버튼을 누르면 zip 파일을 다운로드 받을 수 있습니다. 이 후, 압축을 풀어 안에 있는 모든 파일을 github.io local directory에 덮어쓰기 해 줍니다.
 
-Step 08: local hosting, 마찬가지로 terminal 내에서 **bundle exec jekyll serve**를 입력해준다. 과정 중 dependency관련 error가 나오는 경우, 빠져있는 dependencies를 추가로 설치하여 debugging한다. gem install (dependency_name)
+Step 08: local hosting으로 사이트가 잘 출력되는지 확인해봅니다. \ 마찬가지로 terminal 내에서 **bundle exec jekyll serve**를 입력해줍니다. 과정 중 dependency관련 error가 나오는 경우, 빠져있는 dependencies를 추가로 설치하여 debugging해 줄 수 있습니다. 이 때 command는 gem install (dependency_name)입니다.
 
-Step 09: Server address: http://127.0.0.1:4000 서버 주소를 통해 테마가 잘 적용되었는지 확인
+Step 09:  http://127.0.0.1:4000 와 같은 서버 주소를 통해 테마가 잘 적용되었는지 확인해 봅니다.
 
-Step 10: Commit & Push 후 (username).github.io 에 접속, 사이트가 잘 hosting 되는지 확인.
+Step 10: Commit & Push 후 (username).github.io 에 접속, 사이트가 잘 hosting 되는지 확인해 봅니다.
 
-### post 추가 방법
+### 2. post 추가 방법
 
-모든 포스트들은 _posts안에 저장되어 있으며, Year-Month-Day-title.md 형식으로 지정한다. html도 사용할 수 있지만 md(마크다운)이 더 빠르고 간단하다. 필자는 md파일을 직전학기 조교활동을 통해 처음 접해봤는데, 이번 기회를 통해 제대로 사용해볼 수 있을 것 같다. 
+모든 포스트들은 _posts안에 저장되어 있으며, Year-Month-Day-title.md 형식으로 지정해야 합니다. html도 사용할 수 있지만 md(마크다운)이 더 빠르고 간단합니다. 저 역시 md파일을 직전학기 조교활동을 통해 처음 접해서 이번 기회를 통해 제대로 연습 가능할 것 같습니다.
 
 #### 참조한 마크다운 Guides
 
@@ -45,13 +45,13 @@ Step 10: Commit & Push 후 (username).github.io 에 접속, 사이트가 잘 hos
 [sample blog post](_posts\2020-02-28-test-markdown.md)\
 [hyperlink](https://anvilproject.org/guides/content/creating-links)
 
-모든 md 혹은 html파일은 http://(username).gthub.io/파일명으로 접근할 수 있다.
-ex. 이 포스트는 https://dangalee.github.io/2023-05-07-jekyll-theme 로 확인 가능하다.
+모든 md 혹은 html파일은 http://(username).gthub.io/파일명으로 접근할 수 있습니다.
+ex. 이 포스트는 https://dangalee.github.io/2023-05-07-jekyll-theme 로 확인 가능합니다.
 
-모든 포스트들은 template적용을 위해 front matter로 시작하여야 한다.
+모든 포스트들은 template적용을 위해 front matter로 시작하여야 합니다.
 > "---" \
 > "---" \
-> 두 줄 "---" 사이에는 title, subtitle, tags, cover-img, thumbnail-img, comments 등과 같은 변수들을 지정할 수 있다. (다른 변수들은 생략)
+> 두 줄 "---" 사이에는 title, subtitle, tags, cover-img, thumbnail-img, comments 등과 같은 변수들을 지정할 수 있습니다.
 
 tags: 포스트의 category 지정 가능 ex. [personal, travel] \
 cover-img, thumbnail-img: 이미지 등록 ex. /(위치)/(사진명).jpg \
