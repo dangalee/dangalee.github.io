@@ -30,8 +30,6 @@ $$= nT(1) + cnlogn = O(nlogn)$$
 
 
 
-##### Algorithm
-
 ##### JAVA로 구현
 ```java
 import java.util.Arrays;
