@@ -5,8 +5,8 @@ subtitle: divide-and-conquer
 tags: [algorithm, divide-and-conquer , sorting]
 ---
 
-- 정수를 merge sort를 사용하여 O(nlogn)의 시간복잡도로 정렬할 수 있습니다.
-- 분할 정복은 주로 recursion을 사용하여 구현할 수 있습니다
+- 분할 정렬를 사용하여 O(nlogn)의 시간복잡도로 정렬할 수 있습니다.
+- 분할 정복(divide and concquer)은 주로 recursion을 사용하여 구현할 수 있습니다
 - 주어진 array를 반으로 쪼갠 후, 그 각각을 recursion을 통해 정렬합니다.
 - merge과정을 통해 정렬된 각각의 조각들을 합쳐줍니다.
 
@@ -28,6 +28,18 @@ $$= 2^kT$$ ($$n\over2^k$$) $$ + kcn$$\
 k에 logn대입\
 $$= nT(1) + cnlogn = O(nlogn)$$
 
+
+##### Algorithm
+
+두 개의 함수가 필요합니다.
+1. 결합을 도와주는 함수 \
+나누어진 두 개의 [], [] 리스트 내의 값들을 비교하여 하나의 리스트를 리턴합니다.
+인덱스 포인터를 사용합니다.
+
+2. 분할을 도와주는 함수 (recursion)\
+입력값에 대하여 절반으로 분할 해 준 뒤, 각각을 결합 함수에 집어 넣습니다.\
+이 때 분할은, 더이상 나눌 수 없을 때 까지 진행해줍니다.\
+결합 한 최종 값을 반환합니다.
 
 
 ##### JAVA로 구현

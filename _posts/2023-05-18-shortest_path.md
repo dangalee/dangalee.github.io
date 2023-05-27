@@ -5,17 +5,19 @@ subtitle: Directed Graph에 대하여 Shortest path 구하기
 tags: [algorithm, directed-graph, greedy, undirected-graph]
 ---
 
-최단거리를 greedy principal로 구하는 다익스트라 알고리즘은 **edge가 모두 0 이상일 때만 사용가능하다.** \
+
+다익스트라 알고리즘은 그리디 원리를 사용한다.
+다익스트라 알고리즘을 이용하여 시작점으로부터 각 노드까지의 최단 거리를 구할 수 있다.
+
+다익스트라 알고리즘은 **edge가 모두 0 이상일 때만 사용가능하다.** \
 다익스트라 알고리즘에서, 한번 선택된 node는 visited에 합류하게 된다. \
 그리고 visited에 합류하면, 끝이다. 다시 그 노드에 대한 최소거리를 구하지 않는다.
-<pre>
-사실 다익스트라와 Prim's 알고리즘은 상당히 유사하다. 
-while priority queue != empty: 
-    v = priority queue에서 가장 우선순위인 vertex를 dequeue. 
-    v 의 인접 노드들에 대하여 
-    다익스트라는 시작점으로부터 인접 노드까지의 최소거리를 distance dictionary에 업데이트.
-    Prims는 인접 노드를 방문하는 최소 edge값을 업데이트.
-</pre>
+
+사실 다익스트라와 Prim's 알고리즘은 상당히 유사하다. 둘 다 우선순위 큐가 비지 않은 상태에서\
+가장 우선 순위인 vertex를 dequeue하고,\
+다익스트라는 시작점으로부터 인접 노드까지의 최소거리를 distance dictionary에 업데이트.\
+Prims는 인접 노드를 방문하는 최소 edge값을 업데이트하는 알고리즘이다.
+
 
 
 #### 알고리즘
@@ -33,7 +35,7 @@ End while
 
 #### Time Complexity
 O(v^2), v = vertices
-다만, 우선순위 큐를 이용해서 개선 가능 O(ElogV)
+다만, 우선순위 큐를 이용해서 개선 가능하다. O(ElogV)
 - Each vertex can be connected to (V-1) vertices. V-1 = E
 - Priority Queue에서 enqueue() 후 재정렬 하는데 log(V)
 
@@ -48,7 +50,7 @@ visited = []
 #adjacancy matrix for undirected weighed graph
 G = [[0, 2, 3, 3, 0, 0, 0],
      [2, 0, 4, 0, 3, 0, 0],
-     [3, 4, 0, 5, 1, 6, 0],new
+     [3, 4, 0, 5, 1, 6, 0]]
 while H.empty() == False: #while priority queue is not empty
     current = H.get()[1] #visited and removed
 
