@@ -2,7 +2,7 @@
 layout: post
 title: 제일 작은 수 제거하기
 subtitle: 자바와 친해지기
-tags: [Programming, python, problem-solving]
+tags: [Programming, java, problem-solving]
 ---
 
 목표: Python이외에 Java 언어를 사용하여 코딩 테스트 연습하기.\
