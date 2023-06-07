@@ -2,7 +2,7 @@
 layout: post
 title: 시저 암호
 subtitle: Ascii Value, Type Casting
-tags: [Programming, java, problem-solving]
+tags: [java, problem-solving]
 ---
 
 목표: Python이외에 Java 언어를 사용하여 코딩 테스트 연습하기.\

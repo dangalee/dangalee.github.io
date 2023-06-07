@@ -2,7 +2,7 @@
 layout: post
 title: 문제 풀면서 느끼는 점
 subtitle: 나만의 노트
-tags: [Programming, problem-solving]
+tags: [problem-solving]
 ---
 
 0. 손으로 코드 작성 후, edge case 그리고 시간복잡도를 고려한다. -> 그리고 타이핑.

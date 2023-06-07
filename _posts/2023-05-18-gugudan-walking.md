@@ -2,7 +2,7 @@
 layout: post
 title: 구구단 걷기
 subtitle: 약수를 이용하여 문제 풀기 [math.sqrt()]
-tags: [Programming, python, problem-solving]
+tags: [python, problem-solving]
 ---
 [출처: SW Expert Academy https://swexpertacademy.com/main/main.do]\
 당신은 무한히 많은 행과 열이 있는 곱셈표 위에 서 있다. (i, j)셀에는 정수 ixj 가 적혀 있다. \(만약 행과 열이 9개라면 이는 구구단 표와 동일하다.) 현재 당신의 위치는 셀 (1, 1) 이다.

@@ -5,7 +5,7 @@ title: 자바 Stack and Queue
 # cover-img: /assets/img/path.jpg
 # thumbnail-img: /assets/img/thumb.png
 # share-img: /assets/img/path.jpg
-tags: [Programming, java]
+tags: [java, stack, queue]
 ---
 
 목표: 자바 내에서 Stack과 Queue를 어떻게 사용하는 지 알아보자
@@ -17,8 +17,9 @@ import java.util.LinkedList;
 import java.util.Queue;
 Queue<Integer> q1 = new LinkedList<>();
 ```
+<p>&nbsp;</p>
 
-- **Queue에 값을 추가하는 방법: Offer과 add** \
+**Queue에 값을 추가하는 방법: Offer과 add** \
 Offer와 add 모두 성공 여부에 따라 boolean 값을 출력합니다. \
 그러나, add는 실패 시 IllegalStateException을 반환합니다.
 ```
@@ -26,7 +27,7 @@ q1.add(3);
 q1.offer(4);
 ```
 
-- **Queue 값을 삭제하는 방법: remove와 poll** \
+**Queue 값을 삭제하는 방법: remove와 poll** \
 remove와 poll모두 헤드값을 반환합니다. \
 remove와 다르게 poll은 큐가 비었을 때 null을 반환합니다.
 ```
@@ -34,16 +35,18 @@ q1.poll();
 q1.remove();
 ```
 
-- **Queue 비우는 법: clear**
-```Java
+**Queue 비우는 법: clear**
+```
 q1.clear();  //초기화
 ```
 
-- **Queue 값을 반환하되, 삭제하지 않는 메서드: peek**\
+**Queue 값을 반환하되, 삭제하지 않는 메서드: peek**\
 poll과 유사하게 큐가 비었을 때 null을 반환합니다.
 ```
 q1.peek();
 ```
+
+<p>&nbsp;</p>
 
 ##### Stack (LIFO) 사용법
 자바에서 지원하는 라이브러리 중 하나인 java.util을 import하여 Stack을 생성합니다.

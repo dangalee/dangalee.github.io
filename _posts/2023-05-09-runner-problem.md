@@ -2,7 +2,7 @@
 layout: post
 title: 달리기 경주
 subtitle: 딕셔너리와 시간복잡도
-tags: [Programming, python, problem-solving]
+tags: [python, problem-solving]
 ---
 [출처: 프로그래머스 https://school.programmers.co.kr/]
 
