@@ -74,24 +74,24 @@ Javascript란, 기존 html보다 더 다이내믹한 기능들을 구현할 수 
 참고: [React.js란?](https://velog.io/@jini_eun/React-React.js%EB%9E%80-%EA%B0%84%EB%8B%A8-%EC%A0%95%EB%A6%AC)
 React는 웹 프레임워크로, 자바스크립트 라이브러리의 하나로서 사용자 인터페이스(UI)를 만들기 위해 사용된다.
 
-- 컴포넌트 기반 구조: 한 페이지에서 컴포넌트를 조립해서 화면을 구성합니다. 컴포넌트 단위로 쪼개져 있어, 전체 코드를 파악하기 용이합니다. 컴포넌트를 재 사용하여 코드를 반복해 작성하는 과정을 줄일 수 있습니다. 이로 인해 코드의 유지 보수 및 관리가 용이합니다.
-- 웹 사이트 디자인에 편리한 라이브러리 제공: material-ui와 같은 자바스크립트 라이브러리를 이용하여 디자인 된 테이블을 쉽게 구축할 수 있다.
+- 컴포넌트 기반 구조: 한 페이지에서 컴포넌트를 조립해서 화면을 구성한다. 컴포넌트 단위로 쪼개져 있어, 전체 코드를 파악하기 용이하다. 컴포넌트를 재 사용하여 코드를 반복해 작성하는 과정을 줄일 수 있다. 이로 인해 코드의 유지 보수 및 관리가 용이하다.
+- 웹 사이트 디자인에 편리한 라이브러리를 제공한다.: material-ui와 같은 자바스크립트 라이브러리를 이용하여 디자인 된 테이블을 쉽게 구축할 수 있다.
 
 **Mongodb**
 
-Nosql 비관계형 데이터베이스 관리 시스템으로, node.js처럼 독립적인 서버 프로그램입니다. mongodb는 Json과 같은 문서 형식으로 데이터를 저장하여 접근성과 가시성 그리고 읽기 성능이 좋습니다.
-mongodb는 모든 쿼리문에 대해 json을 바이너리 형태로 인코딩 한 BSON(Binary-json)을 반환합니다. 이를 통해 데이터 용량을 및 인코딩과 디코딩 시간을 절약할 수 있습니다.
+Nosql 비관계형 데이터베이스 관리 시스템으로, node.js처럼 독립적인 서버 프로그램이다. mongodb는 Json과 같은 문서 형식으로 데이터를 저장하여 접근성과 가시성 그리고 읽기 성능이 좋습니다.
+mongodb는 모든 쿼리문에 대해 json을 바이너리 형태로 인코딩 한 BSON(Binary-json)을 반환합니다. BSON은 JSON보다 공간을 더 많이 차지하지만, Binary형태이기에 컴퓨터가 더 빨리 읽고 처리할 수 있다.
 
-node.js와 mongodb를 연동하기 위해서는, 외부 모듈이 있어야 합니다.
-ODM (object data mapping) 라이브러리 중 하나인 mongoose가 대표적입니다.
+node.js와 mongodb를 연동하기 위해서는, 외부 모듈이 있어야 한다.
+ODM (object data mapping) 라이브러리 중 하나인 mongoose가 대표적이다.
 
 **Restful API**
-Rest = Representational state transfer api는 소프트웨어 아키텍처 스타일입니다.\
-Rest 스타일에는 다음과 같은 규칙이 있습니다.\
+Rest = Representational state transfer api는 소프트웨어 아키텍처 스타일이다.\
+Rest 스타일에는 다음과 같은 규칙이 있다.\
 - HTTP URL을 통해서 자원(resource)를 명시할 것
 - HTTP 메소드인 get, post, put, delete를 통해 해당 자원에 대한 CRUD(기본적인 데이터 처리 기능인 Create, Read, Update 그리고 Delete)를 적용하는 것
 
-웹개발에서 rest api는 클라이언트와 서버 간의 통신을 원활하게 하는 역할을 담당합니다.
+웹개발에서 rest api는 클라이언트와 서버 간의 통신을 원활하게 하는 역할을 담당한다.
 
 예제
 
@@ -101,7 +101,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 const port = process.env.PORT || 5000; //5000번 포트로 서버 열기
-//노드js 안의 익스프레스 메소드를 활용하여 서버 환경 설정해주기
+//노드js 안의 익스프레스 라이브러리를 활용하여 서버 환경 설정해주기
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
