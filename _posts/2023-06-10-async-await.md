@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 비동기처리
-subtitle: async, await란 무엇인가
+title: 비동기처리(async, await란 무엇인가)
+subtitle: FitNation 동적 웹사이트 프로젝트 회고 3
 # cover-img: /assets/img/path.jpg
 # thumbnail-img: /assets/img/thumb.png
 # share-img: /assets/img/path.jpg

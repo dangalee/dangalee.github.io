@@ -21,6 +21,8 @@ n은 1 이상, 25이하인 자연수입니다.
 - ASCII VALUE를 활용합니다.
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/ASCII-Table.svg/2522px-ASCII-Table.svg.png)
 
+ASCII 아스키코드란, American Standard Code for Information Interchange의 약자로, 문자를 숫자로 표현할 수 있도록 하는 약속입니다.
+
 - Java 내의 String.charAt(index)를 활용하면 char값을 얻을 수 있습니다.
 - 또한 이 char값은 해당되는 Ascii 정수값으로 변환될 수 있습니다. 
 - Java의 타입캐스팅은 크게 widening casting과 narrowing casting이 있습니다.
