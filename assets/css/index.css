@@ -1,5 +1,5 @@
 .list-filters {
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'S-CoreDream-3Light';
     font-size: 1.125rem;
     margin-top: 1.5rem;
     text-align: center;
@@ -14,16 +14,17 @@
   .list-filters .list-filter  {
     text-decoration: none !important;
     margin-right: 0.9375rem;
-    border: 1px solid #777;
+    border: 1px solid burlywood;
     padding: 0.3125rem 0.625rem;
     cursor: pointer;
     display: inline-block;
+    color:black; 
   }
   
   .list-filters .list-filter.filter-selected,
   .list-filters .list-filter:hover {
     color: #fff;
-    background: #444;
+    background: burlywood;
   }
   
   @media only screen and (max-width: 550px) {

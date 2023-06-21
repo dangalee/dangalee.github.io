@@ -53,11 +53,11 @@ h1, h2, h3, h4 {
   margin-top: 1.25rem;
 }
 a {
-  color: {{ site.link-col | default: "#008AFF" }};
+  color: #4C3515;
 }
 a:hover,
 a:focus {
-  color: {{ site.hover-col | default: "#0085A1" }};
+  color: #deb887;
 }
 blockquote {
   color: #808080;
@@ -980,6 +980,10 @@ pre {
 }
 
 /* --- Misc blog post styles --- */
+
+.blog-post {
+  background-color: #ffffff
+}
 
 .blog-post :first-child {
   margin-top: 0;
