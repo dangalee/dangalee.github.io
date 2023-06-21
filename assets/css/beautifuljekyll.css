@@ -54,6 +54,7 @@ h1, h2, h3, h4 {
 }
 a {
   color: #4C3515;
+  text-decoration: underline;
 }
 a:hover,
 a:focus {
