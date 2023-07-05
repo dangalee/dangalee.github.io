@@ -17,3 +17,4 @@ title: Problem-solving
 
 - [제일 작은 수 제거하기](https://dangalee.github.io/2023-05-29-remove-min/) : 자바 기초, Math.max 또는 Math.min을 활용할 수도 있다.
 
+- [최빈값 구하기](https://dangalee.github.io/2023-07-05-most-frequent-value/) : 자바 iterator, hashmap 활용, 주어진 조건 이용하여 문제풀기.
