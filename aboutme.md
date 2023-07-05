@@ -4,7 +4,7 @@ title: About me
 subtitle: Brief introduction
 ---
 
-안녕하세요 개발자를 목표로 공부하고 있는 이정민이라고 합니다. 
+안녕하세요 개발자를 목표로 공부하고 있습니다. 열심히 공부해서 반드시 꿈을 이루고 싶습니다. 
 
 - IOS Mobile Developmenet
 - Data Structure & Algorithm : Big-O Analysis, Sorting, DFS/BFS, Dynamic Programming, MinHeap
