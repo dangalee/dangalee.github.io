@@ -4,7 +4,7 @@ title: 최빈값 구하기
 subtitle: 문제의 조건에 따라 줄어들 수 있는 코드 길이
 tags: [java, python, problem-solving]
 ---
-[출처: https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV13zo1KAAACFAYh]\n
+[출처: https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV13zo1KAAACFAYh]
 
 
 어느 고등학교에서 실시한 1000명의 수학 성적을 토대로 통계 자료를 만들려고 한다.
