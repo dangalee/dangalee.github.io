@@ -19,7 +19,7 @@ tags: [java, python, problem-solving]
 
 최빈수를 출력하는 프로그램을 작성하여라 (단, 최빈수가 여러 개 일 때에는 가장 큰 점수를 출력하라).
 
-**풀이**  :point_right: \
+**풀이**  
 1. Hashmap(dictionary)를 이용한 풀이. \
 점수는 key, 점수 빈도는 value로 저장한다. 이 후 iterator를 사용하여 최빈값을 찾아낼 수 있다.\
 
@@ -27,8 +27,7 @@ tags: [java, python, problem-solving]
 점수의 범위가 0~ 100인 것을 이용하여, list comprehension을 이용하여 [0, 0 ... 0] 빈 리스트를 만들었다. 점수는 index가 되고, index의 값은 빈도이다.\
 문제에서 주어진 조건을 잘 활용하므로서 더 짧은 길이의 코드를 작성할 수 있다.
 
-
-**팁**  :grey_exclamation:\
+**팁**  
 1. Scanner 클래스의 메소드 nextInt()다음에 nextLine()을 사용할 경우, 정수 뒤의 \n이 같이 읽힐 수 있다.\
 사이에 추가적인 nextLine() 메소드를 불러들여 \n을 제외하고 자료를 읽을 수 있다.
 
