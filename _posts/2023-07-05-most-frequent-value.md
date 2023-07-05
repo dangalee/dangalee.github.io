@@ -21,7 +21,7 @@ tags: [java, python, problem-solving]
 
 **풀이**  
 1. Hashmap(dictionary)를 이용한 풀이. \
-점수는 key, 점수 빈도는 value로 저장한다. 이 후 iterator를 사용하여 최빈값을 찾아낼 수 있다.\
+점수는 key, 점수 빈도는 value로 저장한다. 이 후 iterator를 사용하여 최빈값을 찾아낼 수 있다.
 
 2. 점수의 범위가 0~ 100, 학생 수가 1000명인 것을 활용\
 점수의 범위가 0~ 100인 것을 이용하여, list comprehension을 이용하여 [0, 0 ... 0] 빈 리스트를 만들었다. 점수는 index가 되고, index의 값은 빈도이다.\
