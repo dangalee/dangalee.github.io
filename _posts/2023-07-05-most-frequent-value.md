@@ -37,6 +37,7 @@ tags: [java, python, problem-solving]
 
 2. Map 컬렉션에는 직접적으로 iterator를 사용할 수 없다.\ entrySet() 메소드를 이용하여 set 객체를 반환받은 뒤 iterator 인터페이스를 적용할 수 있다.\
 Map.Entry는 키와 값을 동시에 하나의 class에 저장한다. 따라서 키와 값이 둘 다 필요한 경우 유용하게 사용할 수 있다.
+
 ```java
 for (String key: dictMap.keySet()) {
     System.out.println(key); //key만 반환
@@ -46,11 +47,13 @@ for (Map.Entry<String, String> entry: dictMap.entrySet()) {
     String k = entry.getKey();
     String v = entry.getValue();
 }
-```
 
+
+```
 <p>&nbsp;</p>
 
-**Java 풀이**
+
+**Java 풀이** 
 
 ```java
 import java.util.Scanner;
