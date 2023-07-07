@@ -35,7 +35,7 @@ tags: [java, python, problem-solving]
 1. Scanner 클래스의 메소드 nextInt()다음에 nextLine()을 사용할 경우, 정수 뒤의 \n이 같이 읽힐 수 있다.\
 사이에 추가적인 nextLine() 메소드를 불러들여 \n을 제외하고 자료를 읽을 수 있다.
 
-2. Map 컬렉션에는 직접적으로 iterator를 사용할 수 없다.\ entrySet() 메소드를 이용하여 set 객체를 반환받은 뒤 iterator 인터페이스를 적용할 수 있다.\
+2. Map 컬렉션에는 직접적으로 iterator를 사용할 수 없다. entrySet() 메소드를 이용하여 set 객체를 반환받은 뒤 iterator 인터페이스를 적용할 수 있다.\
 Map.Entry는 키와 값을 동시에 하나의 class에 저장한다. 따라서 키와 값이 둘 다 필요한 경우 유용하게 사용할 수 있다.
 
 ```java
