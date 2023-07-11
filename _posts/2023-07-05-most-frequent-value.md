@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 최빈값 구하기
+title: <SWEA 1204]> 최빈값 구하기
 subtitle: 문제의 조건에 따라 줄어들 수 있는 코드 길이
 tags: [java, python, problem-solving]
 ---
