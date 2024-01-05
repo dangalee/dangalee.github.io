@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Dev Posts
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
+author: Danga Lee
 language: en
 timezone: ''
 
@@ -101,6 +101,4 @@ theme: cactus
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repo: git@github.com:dangalee/dangalee.github.io.git
-  branch: master
+  type: ''
