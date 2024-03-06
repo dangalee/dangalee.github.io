@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="Goal 💡 Visual studio code란? 설치한 VScode Extension 정리하기  [1] Visual studio code란?  Visual Studio Code, also commonly referred to as VS Code,[12] is a source-code editor developed by Microsoft for Windo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="FE 개발일기 [1] 개발 환경">
+<meta property="og:url" content="http://dangalee.github.io/2024/01/08/mocozee-1/index.html">
+<meta property="og:site_name" content="Dev Posts">
+<meta property="og:description" content="Goal 💡 Visual studio code란? 설치한 VScode Extension 정리하기  [1] Visual studio code란?  Visual Studio Code, also commonly referred to as VS Code,[12] is a source-code editor developed by Microsoft for Windo">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-01-08T06:15:36.000Z">
+<meta property="article:modified_time" content="2024-03-05T01:55:32.360Z">
+<meta property="article:author" content="Danga Lee">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>FE 개발일기 [1] 개발 환경</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="http://github.com/probberechts">Projects</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/2024/01/08/Jira/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/2024/01/05/merge-sort/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://dangalee.github.io/2024/01/08/mocozee-1/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://dangalee.github.io/2024/01/08/mocozee-1/&text=FE 개발일기 [1] 개발 환경"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://dangalee.github.io/2024/01/08/mocozee-1/&title=FE 개발일기 [1] 개발 환경"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://dangalee.github.io/2024/01/08/mocozee-1/&is_video=false&description=FE 개발일기 [1] 개발 환경"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=FE 개발일기 [1] 개발 환경&body=Check out this article: http://dangalee.github.io/2024/01/08/mocozee-1/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://dangalee.github.io/2024/01/08/mocozee-1/&title=FE 개발일기 [1] 개발 환경"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://dangalee.github.io/2024/01/08/mocozee-1/&title=FE 개발일기 [1] 개발 환경"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://dangalee.github.io/2024/01/08/mocozee-1/&title=FE 개발일기 [1] 개발 환경"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://dangalee.github.io/2024/01/08/mocozee-1/&title=FE 개발일기 [1] 개발 환경"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://dangalee.github.io/2024/01/08/mocozee-1/&name=FE 개발일기 [1] 개발 환경&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://dangalee.github.io/2024/01/08/mocozee-1/&t=FE 개발일기 [1] 개발 환경"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#Goal-%F0%9F%92%A1"><span class="toc-number">1.</span> <span class="toc-text">Goal 💡</span></a></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        FE 개발일기 [1] 개발 환경
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">Danga Lee</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2024-01-08T06:15:36.000Z" class="dt-published" itemprop="datePublished">2024-01-08</time>
+        
+      
+    </div>
+
+
+      
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <h4 id="Goal-💡"><a href="#Goal-💡" class="headerlink" title="Goal 💡"></a>Goal 💡</h4><ul>
+<li>Visual studio code란?</li>
+<li>설치한 VScode Extension 정리하기</li>
+</ul>
+<p>[1] Visual studio code란?</p>
+<blockquote>
+<p>Visual Studio Code, also commonly referred to as VS Code,[12] is a source-code editor developed by Microsoft for Windows, Linux and macOS.[13] Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git. Users can change the theme, keyboard shortcuts, preferences, and install extensions that add functionality.</p>
+</blockquote>
+<blockquote>
+<p>In the Stack Overflow 2023 Developer Survey, Visual Studio Code was ranked the most popular developer environment tool among 86,544 respondents, with 73.71% reporting that they use it. The survey also found Visual Studio Code to be used more by those learning to code than by professional developers (78% vs. 74%)<br>[출처: Wikipedia]</p>
+</blockquote>
+<p>Visual Studio code는 Microsoft에서 개발한 소스 코드 편집 도구로 Windows, Linux 그리고 MacOS 운영체제를 지원합니다. 디버깅, Syntax highlighting, 코드 완성, Snippets(재사용 가능한 코드 부분), 코드 리팩토링 그리고 Git 연동을 지원합니다. 사용자는 테마, 키보드, shortcuts, preferences, 그리고 extensions를 설정할 수 있습니다.</p>
+<p>2023년 stack overflow 설문에서 visual studio code는 86,544명의 답변 중 73.71%의 사용률로 가장 인기 있는 개발 환경 도구로 랭킹되었습니다. 특히 Visual Studio code는 전문적인 개발자들보다 코드를 배우는 사용자들이 더 많이 사용한 것으로 나타났습니다.</p>
+<p>[2] 설치한 VScode Extension 정리하기</p>
+<ol>
+<li><p><span style='background-color:#f6f8fa'> prettier </span><br>코드 포맷터 (code formatter)로 개발자가 작성한 코드를 Prettier 내의 자체 코드 스타일로 변환합니다. 개발자들 끼리 코드 스타일을 따로 논의할 필요가 없고, 추후 코드 유지 보수에도 용이하다는 장점이 있습니다.</p>
+<p>설정은 VSCode Settings 내 default formatter를 통해 가능합니다.</p>
+</li>
+<li><p><span style='background-color:#fff5b1'> eslint </span><br>eslint는 es(ecma script 약자, javascript의 표준)와 lint (에러가 있는 코드에 표시를 달아 놓음)를 합친 것입니다. 즉, eslint는 자바스크립트 문법에서 에러를 표시해주는 도구입니다.</p>
+<p>eslint는 코드 검사 기능을 제공하여 에러를 잡아낼 뿐 아니라, 코드 스타일 가이드에 맞지 않는 부분을 찾아냅니다. 이를 통해 개발자는 일관성 있고 양질의 코드를 작성할 수 있습니다.</p>
+<p>또한, eslint는 다양한 플러그인을 제공합니다. 예를 들어, eslint-plugin-react를 통해 react관련 규칙을 추가할 수 있습니다.</p>
+</li>
+<li><p><span style='background-color:#F7DDBE'> javascript (es6) code sn(snippets) </span><br>Vscode를 위한 자바스크립트 ES6 syntax에 해당하는 코드 스니펫이 포함되어 있습니다. 이를 통해 반복되는 코드 작성을 줄일 수 있습니다.</p>
+</li>
+<li><p><span style='background-color:#dcffe4'> html css support </span><br>html 요소의 class에서 css 선택자 요소를 쓸 때 자동 완성 기능을 지원합니다. Bootstrap과 같은 거대한 css 프레임워크를 사용할 때 유용합니다.</p>
+</li>
+<li><p><span style='background-color:#f5f0ff'> live server </span><br>로컬 호스트 서버 시작을 통해 코드 산출물을 보다 즉각적으로 볼 수 있도록 돕는 도구입니다.</p>
+</li>
+</ol>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/about/">About</a></li>
+        
+          <li><a href="/archives/">Writing</a></li>
+        
+          <li><a target="_blank" rel="noopener" href="http://github.com/probberechts">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#Goal-%F0%9F%92%A1"><span class="toc-number">1.</span> <span class="toc-text">Goal 💡</span></a></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://dangalee.github.io/2024/01/08/mocozee-1/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://dangalee.github.io/2024/01/08/mocozee-1/&text=FE 개발일기 [1] 개발 환경"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://dangalee.github.io/2024/01/08/mocozee-1/&title=FE 개발일기 [1] 개발 환경"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://dangalee.github.io/2024/01/08/mocozee-1/&is_video=false&description=FE 개발일기 [1] 개발 환경"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=FE 개발일기 [1] 개발 환경&body=Check out this article: http://dangalee.github.io/2024/01/08/mocozee-1/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://dangalee.github.io/2024/01/08/mocozee-1/&title=FE 개발일기 [1] 개발 환경"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://dangalee.github.io/2024/01/08/mocozee-1/&title=FE 개발일기 [1] 개발 환경"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://dangalee.github.io/2024/01/08/mocozee-1/&title=FE 개발일기 [1] 개발 환경"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://dangalee.github.io/2024/01/08/mocozee-1/&title=FE 개발일기 [1] 개발 환경"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://dangalee.github.io/2024/01/08/mocozee-1/&name=FE 개발일기 [1] 개발 환경&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://dangalee.github.io/2024/01/08/mocozee-1/&t=FE 개발일기 [1] 개발 환경"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2016-2024
+    Danga Lee
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="http://github.com/probberechts">Projects</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>

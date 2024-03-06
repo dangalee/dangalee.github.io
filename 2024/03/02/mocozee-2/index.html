@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="Goal 💡 tailwind css란? tailwind css를 선택한 이유  [1] tailwind css란?  Tailwind CSS is an open source CSS framework. The main feature of this library is that, unlike other CSS frameworks like Bootstrap, it">
+<meta property="og:type" content="article">
+<meta property="og:title" content="FE 개발일기 [2] 개발 환경">
+<meta property="og:url" content="http://dangalee.github.io/2024/03/02/mocozee-2/index.html">
+<meta property="og:site_name" content="Dev Posts">
+<meta property="og:description" content="Goal 💡 tailwind css란? tailwind css를 선택한 이유  [1] tailwind css란?  Tailwind CSS is an open source CSS framework. The main feature of this library is that, unlike other CSS frameworks like Bootstrap, it">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-03-02T06:15:36.000Z">
+<meta property="article:modified_time" content="2024-03-05T01:55:32.361Z">
+<meta property="article:author" content="Danga Lee">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>FE 개발일기 [2] 개발 환경</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="http://github.com/probberechts">Projects</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/2024/03/02/mocozee-3/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://dangalee.github.io/2024/03/02/mocozee-2/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://dangalee.github.io/2024/03/02/mocozee-2/&text=FE 개발일기 [2] 개발 환경"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://dangalee.github.io/2024/03/02/mocozee-2/&title=FE 개발일기 [2] 개발 환경"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://dangalee.github.io/2024/03/02/mocozee-2/&is_video=false&description=FE 개발일기 [2] 개발 환경"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=FE 개발일기 [2] 개발 환경&body=Check out this article: http://dangalee.github.io/2024/03/02/mocozee-2/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://dangalee.github.io/2024/03/02/mocozee-2/&title=FE 개발일기 [2] 개발 환경"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://dangalee.github.io/2024/03/02/mocozee-2/&title=FE 개발일기 [2] 개발 환경"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://dangalee.github.io/2024/03/02/mocozee-2/&title=FE 개발일기 [2] 개발 환경"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://dangalee.github.io/2024/03/02/mocozee-2/&title=FE 개발일기 [2] 개발 환경"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://dangalee.github.io/2024/03/02/mocozee-2/&name=FE 개발일기 [2] 개발 환경&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://dangalee.github.io/2024/03/02/mocozee-2/&t=FE 개발일기 [2] 개발 환경"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#Goal-%F0%9F%92%A1"><span class="toc-number">1.</span> <span class="toc-text">Goal 💡</span></a></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        FE 개발일기 [2] 개발 환경
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">Danga Lee</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2024-03-02T06:15:36.000Z" class="dt-published" itemprop="datePublished">2024-03-02</time>
+        
+      
+    </div>
+
+
+      
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <h4 id="Goal-💡"><a href="#Goal-💡" class="headerlink" title="Goal 💡"></a>Goal 💡</h4><ul>
+<li>tailwind css란?</li>
+<li>tailwind css를 선택한 이유</li>
+</ul>
+<p>[1] tailwind css란?</p>
+<blockquote>
+<p>Tailwind CSS is an open source CSS framework. The main feature of this library is that, unlike other CSS frameworks like Bootstrap, it does not provide a series of predefined classes for elements such as buttons or tables. Instead, it creates a list of “utility” CSS classes that can be used to style each element by mixing and matching.<br>[출처: Wikipedia]</p>
+</blockquote>
+<p>Tailwind CSS는 오픈소스 CSS 프레임워크입니다. Tailwind CSS는 Bootstrap과 같은 CSS 프레임워크와는 달리, 버튼들이나 테이블들을 위한 미리 지정된 class들을 제공하지 않습니다. 대신, 스타일링을 위한 다양한 유틸리티형 CSS 클래스들을 제공합니다.</p>
+<p>[2] tailwind css를 선택한 이유</p>
+<p>프론트엔드 개발에 입문하며, CSS 프레임워크 결정에 어려움을 느꼈습니다.<br>기존에 알려진 Bootstrap, Vuetify, Quasar, Element Plus 등을 조사했고, 개인적으로는 Vuetify나 Quasar도 괜찮아 보였으나 팀원들과 의견 조율을 통해 Tailwind CSS로 결정하게 되었습니다. 이와 같은 결정에는 카카오 FE 기술 블로그의 영향도 있었습니다.</p>
+<p><a href="">카카오 FE 개발그룹에서는 Tailwind CSS를 어떻게 사용했을까?</a></p>
+<ul>
+<li><p>Bootstrap vue: 트위터에서 개발한 CSS 프레임워크로 많은 사용자 층이 형성되어 있다는 것이 장점이나, Bootstrap vue는 Vue3를 미지원하고 정형화된 디자인이 많음</p>
+</li>
+<li><p>Vuetify: Vue3를 지원하는 Vuetify 3.0이 릴리즈 됨 (현재 가장 최신버전은 2023년 11월 v3.4버전), 많은 사용자가 있으나 용량이 크고 무겁다는 단점이 있음</p>
+</li>
+<li><p>Quarsar: Vue3 지원, 사용자 층이 엷다는 것이 단점이나, vuetify보다 다양한 장치에 대한 호환성이 높고 이미 완성된 컴포넌트를 제공함</p>
+</li>
+<li><p>Element Plus: Vue용 프레임워크 중 명성이 높다고 하나 네이버에 생각보다 자료가 없음</p>
+</li>
+<li><p>Tailwind CSS: Utility first 프레임워크로, 기존의 CSS 프레임워크 대비 커스텀이 자유롭다는 장점이 있음.</p>
+</li>
+</ul>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/about/">About</a></li>
+        
+          <li><a href="/archives/">Writing</a></li>
+        
+          <li><a target="_blank" rel="noopener" href="http://github.com/probberechts">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#Goal-%F0%9F%92%A1"><span class="toc-number">1.</span> <span class="toc-text">Goal 💡</span></a></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://dangalee.github.io/2024/03/02/mocozee-2/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://dangalee.github.io/2024/03/02/mocozee-2/&text=FE 개발일기 [2] 개발 환경"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://dangalee.github.io/2024/03/02/mocozee-2/&title=FE 개발일기 [2] 개발 환경"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://dangalee.github.io/2024/03/02/mocozee-2/&is_video=false&description=FE 개발일기 [2] 개발 환경"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=FE 개발일기 [2] 개발 환경&body=Check out this article: http://dangalee.github.io/2024/03/02/mocozee-2/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://dangalee.github.io/2024/03/02/mocozee-2/&title=FE 개발일기 [2] 개발 환경"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://dangalee.github.io/2024/03/02/mocozee-2/&title=FE 개발일기 [2] 개발 환경"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://dangalee.github.io/2024/03/02/mocozee-2/&title=FE 개발일기 [2] 개발 환경"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://dangalee.github.io/2024/03/02/mocozee-2/&title=FE 개발일기 [2] 개발 환경"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://dangalee.github.io/2024/03/02/mocozee-2/&name=FE 개발일기 [2] 개발 환경&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://dangalee.github.io/2024/03/02/mocozee-2/&t=FE 개발일기 [2] 개발 환경"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2016-2024
+    Danga Lee
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="http://github.com/probberechts">Projects</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
